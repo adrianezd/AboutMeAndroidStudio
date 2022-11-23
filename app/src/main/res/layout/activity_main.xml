@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="@string/nombre"
+        style="@style/nombreDefecto" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:hint="@string/defecto"
+        style="@style/Dame_apodo" />
+
+    <Button
+        android:id="@+id/button4"
+        android:text="Hecho"
+        app:rippleColor="#130000"
+        style="@style/botonHecho" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        style="@style/fotopeque" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        app:srcCompat="@android:drawable/bottom_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/textString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textoejemplo"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
